@@ -1,0 +1,19 @@
+nav {
+    display: block;
+    background-color: grey;
+    padding: 10px 25px;
+
+    .tab {
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px;
+        text-decoration: none;
+        background-color: rgb(128, 128, 128);
+        color: yellow;
+    }
+
+    .active {
+        background-color: #fff;
+        color: green;
+    }
+}

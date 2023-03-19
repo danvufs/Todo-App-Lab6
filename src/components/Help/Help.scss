@@ -1,0 +1,86 @@
+/* Help.scss */
+.help {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  font-size: 1.2rem;
+}
+
+.help-left {
+  width: 70%;
+}
+
+.help-right {
+  width: 30%;
+}
+
+.help-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.help-description {
+  margin-bottom: 2rem;
+  text-align: justify;
+}
+
+.help-right nav {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.help-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.help-right li {
+  border-bottom: 1px solid #ccc;
+}
+
+.help-right li:last-child {
+  border-bottom: none;
+}
+
+.help-right li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #333;
+  text-decoration: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.help-right li.active a {
+  color: #fff;
+  background-color: #1a5cde;
+}
+
+.help-right li a:hover {
+  background-color: #ddd;
+}
+
+.help-right li.active a:hover {
+  background-color: #134cb0;
+}
+
+.help-content {
+  margin-top: 2rem;
+}
+
+@media screen and (max-width: 1280px) {
+  .help {
+    flex-direction: column;
+  }
+
+  .help-left,
+  .help-right {
+    width: 100%;
+  }
+
+  .help-right {
+    margin-top: 1rem;
+  }
+}

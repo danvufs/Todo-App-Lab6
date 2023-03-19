@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .task-list-container {
+    margin-right: 20px;
+  }
+  
+  .add-task-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .clear-tasks-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .clear-tasks-button,
+  .change-status-button,
+  .remove-button {
+    background-color: #ce5148;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .clear-tasks-button:hover,
+  .remove-button:hover {
+    background-color: red;
+  }
+  
+  .change-status-button {
+    margin-right: 10px;
+    background-color: #4CAF50;
+  }
+  
+  .change-status-button:hover {
+    background-color: #3E8E41;
+  }
+  
+  .loading-message,
+  .no-tasks-message {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  .loading-message {
+    color: #f79e02;
+  }
+  
+  .no-tasks-message {
+    color: #ce5148;
+  }
+  
